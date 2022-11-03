@@ -100,11 +100,9 @@
   outline: transparent;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:focus,
-.modal-comment:focus {
-  border: 1px solid #2196f3;
+  &:focus {
+    border: 1px solid #2196f3;
+  }
 }
 
 .modal-input-icon {
@@ -129,18 +127,22 @@
   outline: transparent;
   padding: 16px 12px;
   margin-bottom: 20px;
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.modal-comment::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
 .modal-field {
   margin-bottom: 30px;
 }

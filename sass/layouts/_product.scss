@@ -31,12 +31,11 @@
   z-index: 1;
 }
 
-.product-title {
+.product__title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--second-text-color);
-  margin-bottom: 50px;
 }
 
 .pro-title--resizing {
